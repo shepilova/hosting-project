@@ -186,7 +186,7 @@ body {
 }
 
 .learn-more-btn:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 
@@ -265,7 +265,7 @@ body {
     text-align: center;
 }
 
-.domain-title {
+.main-title {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: 100;
@@ -293,7 +293,7 @@ body {
 
     background: linear-gradient(to right, #903c4b, #36344f);
 
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .find-input-domain {
@@ -339,40 +339,100 @@ body {
 /* Domain-instructions 
 =========================*/
 .domain-instructions {
-	display: flex;
+    display: flex;
     justify-content: space-between;
     width: 100%;
     padding-bottom: 40px;
 
-	color: #000;
+    color: #000;
 }
 
 .instructions-item {
-	flex: 1 1 0;
-	position: relative;
-	padding-left: 70px;
-	padding-right: 30px;
+    flex: 1 1 0;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 30px;
 }
 
 .instructions-icon {
-	position: absolute;
-	top: 0;
-	left: 15px;
-	z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 10;
 }
 
 .instructions-title {
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: uppercase;
-	
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .instructions-text {
-	font-size: 14px;
-	font-weight: 400;
-	color: #5e5e5e;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e5e5e;
 }
+
+
+/* Features 
+=========================*/
+.features {
+    width: 100%;
+    background-color: #2c3039;
+}
+
+.features-inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0 40px;
+}
+
+.f-title {
+    text-align: center;
+    color: #fff;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-item {
+    flex: 31%;
+    position: relative;
+    margin: 30px 0;
+    padding-left: 80px;
+    padding-right: 30px;
+}
+
+.features-icon {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 10;
+}
+
+.features-title {
+	font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features-text {
+	font-size: 14px;
+    font-weight: 400;
+    color: #98a3a3;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
