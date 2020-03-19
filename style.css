@@ -10,3 +10,227 @@ body {
 	line-height: 1.5;
 	color: #fff;
 }
+
+
+/* Container */
+.container {
+	width: 100%;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+	width: 100%;
+	padding: 30px 0;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+
+	border-bottom: 1px solid #2b2f37;
+}
+
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-logo {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 240px;
+}
+
+.logo-text {	
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.red {
+	color: #e84c3d;
+}
+
+/* Navigation */
+.nav {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.nav-link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+
+	position: relative;
+
+	color: #fff;
+	text-decoration: none;
+
+	transition: color .2s linear;
+}
+
+.nav-link:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 100%;
+	z-index: 10;
+
+	width: 100%;
+	height: 1px;
+
+	background-color: #fff;
+	opacity: 0;
+}
+
+.nav-link:hover {
+	color: #e84c3d;
+}
+
+.nav-link:hover:after {
+	opacity: 1;
+	background-color: #e84c3d;
+}
+
+
+/* Intro */
+.intro {
+	width: 100%;
+
+	background: #2a2e35 url("img/intro.jpg") top no-repeat ;
+}
+
+.intro-inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+
+	width: 100%;
+	max-width: 780px;
+	margin: 0 auto;
+	height: 583px;
+}
+
+.intro-title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	font-weight: 100;
+	line-height: 1;
+	text-align: center;
+
+	margin-bottom: 20px;
+}
+
+.intro-subtitle {
+	width: 100%;
+	max-width: 480px;
+	margin: 0 auto;
+	text-align: center;
+
+	margin-bottom: 20px;
+}
+
+.intro-subtitle-text {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* Button */
+.intro-btn {
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px auto;
+
+	width: 220px;
+	height: 50px;
+	padding: 15px;
+	text-align: center;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+
+	background-color: #e84c3d;
+
+	transition: background .1s linear, 
+	color .1s linear;
+}
+
+.intro-btn:hover {
+	background-color: #fff;
+	color: #e84c3d;
+}
+
+.learn-more-btn {
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* Strengths */
+.strengths {
+	background-color: #2b2f37;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
