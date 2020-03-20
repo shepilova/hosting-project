@@ -655,6 +655,79 @@ body {
 }
 
 
+/* Company-blog
+=========================*/
+.company-blog {
+	width: 100%;
+	background-color: #fff;
+}
+
+.company-blog-inner {
+	width: 100%;
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 20px 0;
+
+	color: #000;
+	text-align: center;
+}
+
+.blog-title {
+	margin-bottom: 40px;
+}
+
+/* Arcticles
+=========================*/
+.arcticles-item {
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	
+	border-bottom: 1px solid #ebebeb;
+}
+
+.arcticle-content {
+	max-width: 540px;
+	padding: 0 20px 20px 0;
+}
+
+.arcticle-title {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.datetime {
+	font-size: 12px;
+	color: #5e5e5e;
+}
+
+.comments {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.datetime, .comments, .likes, .like-amount {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+.like-amount {
+	font-size: 12px;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
 
 
 
