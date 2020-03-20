@@ -151,6 +151,25 @@ body {
 
 /* Button 
 =========================*/
+.login-btn {
+	width: 100px;
+	height: 40px;
+	padding: 10px;
+	
+	text-align: center;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+
+	border: 1px solid #e84c3d;
+}
+
+.login-btn:hover {
+	background-color: #e84c3d;
+}
+
 .intro-btn {
     display: inline-block;
     vertical-align: top;
@@ -749,6 +768,9 @@ body {
     display: none;
 }
 
+.arcticles-item:nth-child(4) {
+	border: none;
+}
 
 /* Map
 =========================*/
