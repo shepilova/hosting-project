@@ -684,6 +684,7 @@ body {
 	text-align: left;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
+	position: relative;
 	
 	border-bottom: 1px solid #ebebeb;
 }
@@ -715,19 +716,35 @@ body {
 	margin-bottom: 5px;
 }
 
+.like-img {
+	cursor: pointer;
+}
+
 .like-amount {
 	font-size: 12px;
 	font-weight: 700;
 }
 
+.blog-btn:hover {
+	background-color: #e84c3d;
+	color: #fff;
+}
 
+.arcticle-shield {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
 
+	width: 100%;
+	height: 100%;
 
+	background-color: rgba(255, 255, 255, .7);
+}
 
-
-
-
-
+.arcticles-item:hover .arcticle-shield {
+	display: none;
+}
 
 
 
