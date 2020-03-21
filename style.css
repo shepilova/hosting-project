@@ -16,8 +16,9 @@ body {
 ========================*/
 .container {
     width: 100%;
-    max-width: 940px;
+    max-width: 970px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -220,6 +221,7 @@ body {
 
 .strengths-inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
@@ -307,6 +309,7 @@ body {
 /* Find-domain-input
 =========================*/
 .find-domain {
+	position: relative;
     width: 100%;
     height: 70px;
     padding: 10px;
@@ -319,8 +322,9 @@ body {
 
 .find-input-domain {
     position: relative;
+    display: inline-block;
 
-    width: 480px;
+    width: 74%;
     height: 50px;
     padding: 15px;
 
@@ -336,11 +340,10 @@ body {
 
 .find-domain-btn {
     display: inline-block;
-    position: absolute;
+    position: relative;
     height: 50px;
-    width: 140px;
+    width: 25%;
     padding: 15px;
-
 
     font-size: 14px;
     font-weight: 700;
@@ -362,6 +365,7 @@ body {
 .domain-instructions {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     padding-bottom: 40px;
 
@@ -451,6 +455,7 @@ body {
 .pick-plan {
     width: 100%;
     background-color: #fff;
+    border-bottom: 1px solid #f1f1f1;
 }
 
 .pick-plan-inner {
@@ -645,6 +650,7 @@ body {
 .testimonials {
     width: 100%;
     background-color: #fff;
+    border-bottom: 1px solid #f1f1f1;
 }
 
 .testimonials-inner {
@@ -682,6 +688,7 @@ body {
 .company-blog {
     width: 100%;
     background-color: #fff;
+    border-bottom: 1px solid #f1f1f1;
 }
 
 .company-blog-inner {
@@ -873,7 +880,6 @@ body {
 
 .subscribe {
     position: relative;
-    right: 20px;
 }
 
 .subscribe-title {
@@ -881,7 +887,7 @@ body {
 }
 
 .email-input {
-    width: 280px;
+    width: 65%;
     height: 40px;
 
     font-size: 14px;
@@ -891,6 +897,7 @@ body {
     width: 80px;
     height: 40px;
     padding: 0;
+    margin-left: -2px;
 
     font-size: 12px;
 }
@@ -909,6 +916,12 @@ body {
     padding: 20px 0;
 
     display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .footer-150 {
@@ -967,3 +980,379 @@ body {
     font-size: 12px;
     font-weight: 400;
 }
+
+
+/* ===== MEDIA ===========
+=========================*/
+
+@media (max-width: 970px) {		/*LAPTOP*/
+
+	/* Socials */
+	.socials-inner {
+		display: block;
+		text-align: center;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	.social-list {
+		display: block;
+		margin: 0 auto 10px;
+	}
+
+	.social-title {
+		margin-right: 20px;
+	}
+
+	.subscribe {
+		height: 30px;
+		margin: 12px auto 0;
+	}
+
+	.email-input {
+		height: 100%;
+		width: 30%;
+	}
+
+	.email-btn {
+		height: 100%;
+		width: 6%;
+		top: -2px;
+
+		font-size: 10px;
+	}
+
+	/* Footer */
+	.footer-inner {
+		padding: 10px 0;
+	}
+
+	.footer-150 {
+		flex: 1 1 0;
+		margin-right: 0;
+		width: 23%;
+	}
+
+	.footer-copyr {
+		display: flex;
+		align-items: center;
+		width: 80%;
+
+		margin: 5px auto 0;
+	}
+
+	.footer-copyr > a {
+		margin-right: 30px;
+	}
+
+	.footer-tel, .footer-email, .copyright {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 789px) {		/*Footer fix*/
+	
+	/* Header */
+	.header {
+		padding: 15px 0;
+	}
+
+	.header-logo {
+		width: 27%;
+		flex-wrap: wrap;
+	}
+
+	.logo-photo {
+		margin: 0 auto 5px;
+	}
+
+	.logo-text {
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.nav {
+		position: relative;
+		top: 5px;
+	}
+
+	.login-btn {
+		position: relative;
+		top: 5px;
+	}
+
+
+	/* Intro */
+	.intro-title {
+
+	}
+
+	/* Strengths */
+	.strengths-item {
+		flex: 34%;
+		padding: 10px 50px 20px;
+	}
+	
+	.strengths-item:last-child {
+		padding: 10px 160px 20px;
+	}
+
+	.strengths-icon {
+		height: 60px;
+	}
+
+	.strengths-title {
+		font-size: 15px;
+	}
+
+	.strengths-text {
+		font-size: 13px;
+	}
+
+	/* Plan */
+	.plan-item {
+		max-width: 310px;
+		margin: 10px;
+	}
+
+	.plan-item:last-child {
+		margin: 10px auto;
+	}
+	
+	/* Socials */
+	.email-input {
+		font-size: 12px
+	}
+
+	.email-btn {
+		top: -1px;
+	}
+
+
+	.footer-tel {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 713px) {		/*TABLET*/
+
+	/* Header */
+	.header {
+		padding: 15px 0;
+	}
+	.header-logo {
+		/*top: -10px;*/
+		order: 2;
+	}
+	
+	/* Intro */
+	.intro-inner {
+		margin-bottom: -70px;
+	}
+
+	/* Nav */
+	
+	.nav {
+		display: none;
+		order: 1;
+	}
+	
+	.nav-link {
+		display: block;
+		font-size: 15px;
+		margin: 2px 0;
+	}
+
+	.login-btn {
+		order: 3;
+	}
+	
+	/* Plan */
+	.pick-plan-inner {
+		padding: 20px 0 0;
+	}
+
+	/* Contact map*/
+	.contact-map {
+		height: 415px;
+	}
+
+	/* Footer */
+	.footer-copyr {
+		width: 95%;
+	}
+
+	.subscribe {
+		left: -19px;
+	}
+
+	.email-input {
+		font-size: 11px;
+		width: 37%;
+	}
+
+	.email-btn {
+		top: -1px;
+	}
+}
+
+@media (max-width: 593px) {		/*TABLET*/
+	/* Header */
+	.header {
+		padding: 15px 0;
+	}
+
+	.header-logo {
+		width: 35%;
+	}
+
+	/* Intro */
+	.intro-title {
+		font-size: 25px;
+	}
+
+	.intro-subtitle-text {
+		font-size: 13px;
+	}
+
+	.intro-btn {
+		transform: scale(.8);
+	}
+
+	.learn-more-btn {
+		font-size: 10px;
+	}
+
+	/* Search domain */
+	.search-domain-inner {
+		padding-top: 20px;
+	}
+	.main-title {
+		font-size: 25px;
+	}
+
+	.main-subtitle {
+		font-size: 13px;
+		margin: 20px 0;
+	}
+
+	.find-domain {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		width: 60%;
+		padding: 5px;
+		height: 40px;
+	}
+
+	.find-input-domain {
+		width: 65%;
+		height: 100%;
+		font-size: 11px;
+		padding: 8px;
+	}
+
+	.find-domain-btn {
+		font-size: 8px;
+		/*width: 20%;*/
+		height: 100%;
+		padding: 8px;
+		margin-left: 2px;
+	}
+	
+	.domain-instructions {
+		padding-bottom: 15px;
+	}
+	.instructions-item {
+		margin-right: 5px;
+		padding-left: 45px;
+		padding-right: 0;
+	}
+
+	.instructions-icon {
+		left: 10px;
+	}
+
+	.instructions-title {
+		font-size: 12px;
+	}
+
+	.instructions-text {
+		font-size: 11px;
+	}
+
+	/* Features */
+	.features-inner {
+		padding: 20px 0 0;
+	}
+
+	.features-item {
+		flex: 49%;
+	}
+	
+	/* Plan */
+	.pick-plan-inner {
+		padding: 20px 0 0;
+	}
+
+	.plan-item {
+		max-width: 350px;
+		margin: 10px auto;
+	}
+
+	.plan-item:last-child {
+		margin-bottom: 0;
+	}
+
+	/* Testimonials & Quotes */
+	.testimonials-inner {
+		padding: 20px 0 10px;
+	}
+	.quotes-text {
+		font-size: 13px;
+	}
+
+	.quotes-author-name {
+		font-size: 10px;
+	}
+
+	/* Company Blog */
+	.blog-title {
+		margin-bottom: 20px;
+	}
+
+	.arcticles-item {
+		transform: scale(0.9);
+	}
+
+	.arcticle-title {
+		font-size: 20px;
+	}
+
+	/* Footer */
+	.email-input {
+		font-size: 9px;
+
+	}
+
+	.email-btn {
+		font-size: 8px;
+		width: 8%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
