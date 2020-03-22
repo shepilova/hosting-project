@@ -200,6 +200,9 @@ body {
 }
 
 .learn-more-btn {
+	display: inline-block;
+	margin: 0 auto;
+
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -894,6 +897,7 @@ body {
 }
 
 .email-btn {
+	top: -1px;
     width: 80px;
     height: 40px;
     padding: 0;
@@ -1028,14 +1032,15 @@ body {
 	}
 
 	.footer-150 {
-		flex: 1 1 0;
+		flex: 24%;
 		margin-right: 0;
-		width: 23%;
+		/*width: 23%;*/
 	}
 
 	.footer-copyr {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		width: 80%;
 
 		margin: 5px auto 0;
@@ -1047,6 +1052,10 @@ body {
 
 	.footer-tel, .footer-email, .copyright {
 		display: inline-block;
+	}
+
+	.copyright {
+		margin: 5px 0;
 	}
 }
 
@@ -1126,6 +1135,7 @@ body {
 
 	.email-btn {
 		top: -1px;
+		min-width: 37px;
 	}
 
 
@@ -1167,6 +1177,11 @@ body {
 		order: 3;
 	}
 	
+	/* Features */
+	.features-item {
+		padding-right: 5px;
+	}
+	
 	/* Plan */
 	.pick-plan-inner {
 		padding: 20px 0 0;
@@ -1178,17 +1193,28 @@ body {
 	}
 
 	/* Footer */
+	.socials-inner {
+		flex-wrap: wrap;
+		padding: 15px 0 40px;
+	}
+
+	.social-title {
+		display: block;
+		margin-bottom: 10px;
+	}
+
 	.footer-copyr {
-		width: 95%;
+		width: 100%;
 	}
 
 	.subscribe {
-		left: -19px;
+		/*left: -19px;*/
 	}
 
 	.email-input {
 		font-size: 11px;
 		width: 37%;
+		min-width: 170px;
 	}
 
 	.email-btn {
@@ -1206,7 +1232,19 @@ body {
 		width: 35%;
 	}
 
+	.logo-photo {
+		margin: 0 0 5px 5px;
+	}
+
+	.logo-text {
+		margin: 0 0 0 5px;
+	}
+
 	/* Intro */
+	.intro-inner {
+		margin-bottom: -100px;
+	}
+
 	.intro-title {
 		font-size: 25px;
 	}
@@ -1221,6 +1259,15 @@ body {
 
 	.learn-more-btn {
 		font-size: 10px;
+	}
+
+	.strengths-item {
+		flex: 60%;
+		padding: 0 100px 20px;
+	}
+
+	.strengths-item:last-child {
+		padding: 0 100px 20px;
 	}
 
 	/* Search domain */
@@ -1240,7 +1287,7 @@ body {
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
-		width: 60%;
+		width: 80%;
 		padding: 5px;
 		height: 40px;
 	}
@@ -1248,25 +1295,27 @@ body {
 	.find-input-domain {
 		width: 65%;
 		height: 100%;
-		font-size: 11px;
+		font-size: 14px;
 		padding: 8px;
 	}
 
 	.find-domain-btn {
-		font-size: 8px;
+		font-size: 12px;
 		/*width: 20%;*/
 		height: 100%;
-		padding: 8px;
+		padding: 1px;
 		margin-left: 2px;
 	}
 	
 	.domain-instructions {
 		padding-bottom: 15px;
 	}
+
 	.instructions-item {
-		margin-right: 5px;
 		padding-left: 45px;
 		padding-right: 0;
+		flex: 51%;
+		margin: 10px;
 	}
 
 	.instructions-icon {
@@ -1275,10 +1324,13 @@ body {
 
 	.instructions-title {
 		font-size: 12px;
+		margin-left: 10px;
+		margin-bottom: 5px;
 	}
 
 	.instructions-text {
 		font-size: 11px;
+		margin-left: 10px;
 	}
 
 	/* Features */
@@ -1287,7 +1339,7 @@ body {
 	}
 
 	.features-item {
-		flex: 49%;
+		flex: 55%;
 	}
 	
 	/* Plan */
@@ -1304,6 +1356,10 @@ body {
 		margin-bottom: 0;
 	}
 
+	.plan-item:hover {
+		min-width: 315px;
+	}
+
 	/* Testimonials & Quotes */
 	.testimonials-inner {
 		padding: 20px 0 10px;
@@ -1317,22 +1373,47 @@ body {
 	}
 
 	/* Company Blog */
+	.company-blog-inner {
+		padding: 20px 0 10px;
+	}
+
 	.blog-title {
 		margin-bottom: 20px;
 	}
 
 	.arcticles-item {
-		transform: scale(0.9);
+		display: block;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+	}
+
+	.arcticle-content {
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 0 10px;
+	}
+
+	.arcticle-photo {
+		padding: 0 10px;
 	}
 
 	.arcticle-title {
-		font-size: 20px;
+		font-size: 18px;
+	}
+
+	.blog-btn {
+		margin-top: 0;
+	}
+
+	/* Contact-Map*/
+	.contact-map {
+		height: 330px;
 	}
 
 	/* Footer */
 	.email-input {
 		font-size: 9px;
-
+		width: 43%;
 	}
 
 	.email-btn {
@@ -1340,15 +1421,74 @@ body {
 		width: 8%;
 	}
 
+	.footer-150 {
+		margin-top: 10px;
+		margin-right: 55px;
+	}
+
+}	
+
+
+@media (max-width: 425px) {		/* Mobile-L */
+	
+	/* Socials */
+	.social-icons {
+		margin-right: 35px;
+	}
+
+	.strengths-item {
+		padding: 0 30px 20px;
+	}
+	
+	.strengths-item:last-child {
+		padding: 0 30px 20px;
+	}
+
+	/* Find domain */
+	.find-domain {
+		width: 90%;
+	}
+
+	/* Plans */
+	.plan-list {
+		padding: 0 10px;
+	}
+
+	.plan-item:hover {
+		min-width: unset;
+	}
+	
+	/* Arcticles */
+	.arcticles-item {
+		text-align: center;
+	}
+
+	/* Footer */
+	.footer-150 {
+		margin-right: 40px;
+	}
 }
 
 
+@media (max-width: 375px) {		/* Mobile-M */
+	
+	/* Header-Inner */
+	.find-domain-btn {
+		font-size: 11px;
+	}
+
+}
 
 
+@media (max-width: 320px) {		/* Mobile-S */
+	 
+	/* Footer */
+	.footer-copyr {
+		display: block;
+		text-align: center;
+	}
 
-
-
-
+}
 
 
 
